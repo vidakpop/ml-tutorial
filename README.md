@@ -1,80 +1,64 @@
-Machine Learning with Python Libraries
 
-Overview
+# Machine Learning with Python Libraries
+
+## Overview
 
 This project demonstrates the use of popular Python libraries for machine learning, including Pandas, NumPy, Matplotlib, Seaborn, and Scikit-Learn. It utilizes the Titanic dataset to build and evaluate a classification model to predict passenger survival.
 
-Libraries Used
+## Libraries Used
 
-NumPy: Numerical operations and array handling
+- **NumPy**: Numerical operations and array handling
+- **Pandas**: Data manipulation and preprocessing
+- **Matplotlib & Seaborn**: Data visualization
+- **Scikit-Learn**: Machine learning model building and evaluation
 
-Pandas: Data manipulation and preprocessing
+## Steps Covered
 
-Matplotlib & Seaborn: Data visualization
+1. **Data Loading**
+   - The dataset is loaded directly from an online source using Pandas.
 
-Scikit-Learn: Machine learning model building and evaluation
+2. **Data Preprocessing**
+   - Dropping unnecessary columns (e.g., Name, Ticket, Cabin)
+   - Handling missing values (Age, Embarked)
+   - Encoding categorical variables (Sex, Embarked)
 
-Steps Covered
+3. **Data Splitting**
+   - Features (X) and target variable (y) are separated.
+   - The dataset is split into training and testing sets (80%-20%).
 
-1. Data Loading
+4. **Feature Scaling**
+   - Standardization is applied using StandardScaler to normalize the feature values.
 
-The dataset is loaded directly from an online source using Pandas.
+5. **Model Training**
+   - A RandomForestClassifier is trained on the processed dataset.
 
-2. Data Preprocessing
+6. **Model Evaluation**
+   - Predictions are made on the test set.
+   - Accuracy score and classification report are generated.
+   - A confusion matrix is visualized using Seaborn.
 
-Dropping unnecessary columns (e.g., Name, Ticket, Cabin)
+## How to Use
 
-Handling missing values (Age, Embarked)
+1. Install the required libraries if not already installed:
+   ```
+   pip install numpy pandas matplotlib seaborn scikit-learn
+   ```
+2. Run the notebook to execute the code and visualize the results.
 
-Encoding categorical variables (Sex, Embarked)
+## Results
 
-3. Data Splitting
+- The trained model provides predictions on Titanic survival.
+- The confusion matrix and classification report evaluate model performance.
+- Visualizations help interpret the data and feature importance.
 
-Features (X) and target variable (y) are separated.
+## Future Improvements
 
-The dataset is split into training and testing sets (80%-20%).
+- Try different models like Logistic Regression, SVM, or Gradient Boosting.
+- Tune hyperparameters for better performance.
+- Experiment with feature engineering techniques.
 
-4. Feature Scaling
-
-Standardization is applied using StandardScaler to normalize the feature values.
-
-5. Model Training
-
-A RandomForestClassifier is trained on the processed dataset.
-
-6. Model Evaluation
-
-Predictions are made on the test set.
-
-Accuracy score and classification report are generated.
-
-A confusion matrix is visualized using Seaborn.
-
-How to Use
-
-Install the required libraries if not already installed:
-
-pip install numpy pandas matplotlib seaborn scikit-learn
-
-Run the notebook to execute the code and visualize the results.
-
-Results
-
-The trained model provides predictions on Titanic survival.
-
-The confusion matrix and classification report evaluate model performance.
-
-Visualizations help interpret the data and feature importance.
-
-Future Improvements
-
-Try different models like Logistic Regression, SVM, or Gradient Boosting.
-
-Tune hyperparameters for better performance.
-
-Experiment with feature engineering techniques.
-
-License
+## License
 
 This project is open-source and available for modification and use.
 
+You can view and edit the README file [here](https://github.com/vidakpop/ml-tutorial/edit/main/README.md).
